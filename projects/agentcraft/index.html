@@ -21,11 +21,48 @@
                 <div><p class="case-lede">A documentation-driven team of AI agents for software delivery. Give it a project brief, let specialized agents plan and build in small iterations, then review the work before it moves on.</p><div class="case-actions"><a class="button" href="https://github.com/hamzajg/agentcraft" target="_blank" rel="noopener noreferrer">Explore the repository <span>↗</span></a><a class="text-link" href="../index.html">More projects <span>↗</span></a></div></div>
             </div>
         </section>
-        <div class="case-preview-wrap"><div class="case-preview agent-scene">
-            <span class="case-preview-label">PRODUCT PREVIEW · LOCAL AGENT WORKFLOW</span>
-            <div class="terminal-window"><div class="terminal-bar"><i></i><i></i><i></i><span>agentcraft / workspace</span></div><div class="terminal-content"><p><span class="terminal-prompt">›</span> python agentcraft bootstrap</p><div class="terminal-rule"></div><p class="terminal-muted">iteration 03 <span>·</span> working from docs/blueprint.md</p><p><span class="terminal-ok">✓</span> Spec agent <span class="terminal-state">complete</span></p><p><span class="terminal-ok">✓</span> Architect <span class="terminal-state">complete</span></p><p><span class="terminal-live">●</span> Backend dev <span class="terminal-state">working</span></p><div class="terminal-progress"><i></i></div><p class="terminal-small">Immediate review follows each task · user approval gate</p></div></div>
-            <span class="visual-caption">DOCUMENTATION-BASED UI CONCEPT <span>Illustrative terminal, not a live capture</span></span>
-        </div></div>
+        <div class="case-preview-wrap">
+            <div class="case-preview agent-scene agent-scene-frame">
+                <span class="case-preview-label">PRODUCT PREVIEW · LOCAL AGENT WORKFLOW</span>
+                <div class="agent-terminal-wrap">
+                    <div class="agent-terminal">
+                        <div class="agent-terminal-bar">
+                            <span class="agent-tbar-dots"><i></i><i></i><i></i></span>
+                            <span class="agent-tbar-title">agentcraft / workspace</span>
+                            <span class="agent-tbar-badge">iteration 03</span>
+                        </div>
+                        <div class="agent-terminal-body">
+                            <div class="agent-tcol agent-tcol-main">
+                                <p class="agent-tline-cmd"><em>›</em> python agentcraft bootstrap</p>
+                                <div class="agent-tline-rule"></div>
+                                <p class="agent-tline-info">working from <span>docs/blueprint.md</span></p>
+                                <p class="agent-tline-ok"><em>✓</em> Spec agent <span>complete</span></p>
+                                <p class="agent-tline-ok"><em>✓</em> Architect <span>complete</span></p>
+                                <p class="agent-tline-ok"><em>✓</em> Planner <span>complete</span></p>
+                                <p class="agent-tline-live"><em>●</em> Backend dev <span>working…</span></p>
+                                <div class="agent-tline-bar"><i></i></div>
+                                <p class="agent-tline-small">Immediate review follows each task · user approval gate</p>
+                                <div class="agent-tline-cursor"></div>
+                            </div>
+                            <div class="agent-tcol agent-tcol-status">
+                                <p class="agent-status-label">AGENT TEAM</p>
+                                <div class="agent-status-row agent-status-done"><i></i><span>Spec agent</span><b>done</b></div>
+                                <div class="agent-status-row agent-status-done"><i></i><span>Architect</span><b>done</b></div>
+                                <div class="agent-status-row agent-status-done"><i></i><span>Planner</span><b>done</b></div>
+                                <div class="agent-status-row agent-status-live"><i></i><span>Backend dev</span><b>active</b></div>
+                                <div class="agent-status-row agent-status-wait"><i></i><span>Reviewer</span><b>waiting</b></div>
+                                <div class="agent-status-sep"></div>
+                                <p class="agent-status-label">CHECKPOINTS</p>
+                                <div class="agent-checkpoint"><span>iter-01</span><b>✓</b></div>
+                                <div class="agent-checkpoint"><span>iter-02</span><b>✓</b></div>
+                                <div class="agent-checkpoint agent-checkpoint-active"><span>iter-03</span><b>…</b></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="visual-caption">DOCUMENTATION-BASED UI CONCEPT <span>Illustrative terminal, not a live capture</span></span>
+            </div>
+        </div>
         <section class="case-section">
             <div class="case-section-heading"><div><p class="eyebrow">THE PRODUCT</p><h2>Local agents.<br>Human direction.</h2></div><p>AgentCraft runs a configurable team of specialized agents against a project workspace. Its documented loop moves from specifications and architecture to planned iterations, implementation, review, and user approval. The repository emphasizes local Ollama models, resumable checkpoints, and reusable skills and frameworks.</p></div>
             <div class="case-facts">
