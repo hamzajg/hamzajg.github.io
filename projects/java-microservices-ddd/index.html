@@ -21,11 +21,101 @@
                 <div><p class="case-lede">A working multi-module sample exploring bounded contexts, domain and application layers, domain events, and service collaboration through ports and adapters.</p><div class="case-actions"><a class="button" href="https://github.com/hamzajg/JavaMicroservicesDDD" target="_blank" rel="noopener noreferrer">Explore the repository <span>↗</span></a><a class="text-link" href="../index.html">More projects <span>↗</span></a></div></div>
             </div>
         </section>
-        <div class="case-preview-wrap"><div class="case-preview ddd-scene">
-            <span class="case-preview-label">ARCHITECTURE PREVIEW · FOUR BOUNDED CONTEXTS</span>
-            <div class="architecture-preview"><div class="architecture-label">API / SERVICE BOUNDARIES</div><div class="context-row"><span>Customer.Api</span><span>Product.Api</span><span>Identity.Api</span></div><div class="architecture-arrows"><i>↕</i><i>↕</i><i>↕</i></div><div class="context-row context-app"><span>Customer.App</span><span>Product.App</span><span>Identity.App</span></div><div class="domain-kernel">SHARED DOMAIN KERNEL <span>·</span> DOMAIN EVENTS <span>·</span> PORTS & ADAPTERS</div><div class="order-bridge"><span>Order.Api / Order.App</span><i>← HTTP ports →</i><span>Customer + Product</span></div></div>
-            <span class="visual-caption">DOCUMENTATION-BASED ARCHITECTURE MAP <span>Not a captured source diagram</span></span>
-        </div></div>
+        <div class="case-preview-wrap">
+            <div class="case-preview ddd-scene ddd-diagram-frame">
+                <span class="case-preview-label">ARCHITECTURE PREVIEW · FOUR BOUNDED CONTEXTS</span>
+
+                <div class="ddd-diagram">
+
+                    <!-- Layer label: API hosts -->
+                    <div class="ddd-layer-label ddd-layer-api">API HOSTS</div>
+
+                    <!-- Row 1: API boxes -->
+                    <div class="ddd-row ddd-row-api">
+                        <div class="ddd-box ddd-box-api">
+                            <span class="ddd-box-tag">Spring Boot</span>
+                            <b>Customer.Api</b>
+                            <small>REST · /customers</small>
+                        </div>
+                        <div class="ddd-box ddd-box-api">
+                            <span class="ddd-box-tag">Spring Boot</span>
+                            <b>Product.Api</b>
+                            <small>REST · /products</small>
+                        </div>
+                        <div class="ddd-box ddd-box-api">
+                            <span class="ddd-box-tag">Spring Boot</span>
+                            <b>Identity.Api</b>
+                            <small>REST · /auth</small>
+                        </div>
+                        <div class="ddd-box ddd-box-api ddd-box-order">
+                            <span class="ddd-box-tag ddd-tag-order">Spring Boot</span>
+                            <b>Order.Api</b>
+                            <small>REST · /orders</small>
+                        </div>
+                    </div>
+
+                    <!-- Arrows down -->
+                    <div class="ddd-arrows-row">
+                        <span class="ddd-arrow">↕</span>
+                        <span class="ddd-arrow">↕</span>
+                        <span class="ddd-arrow">↕</span>
+                        <span class="ddd-arrow ddd-arrow-order">↕</span>
+                    </div>
+
+                    <!-- Layer label: App layer -->
+                    <div class="ddd-layer-label ddd-layer-app">APPLICATION LAYER</div>
+
+                    <!-- Row 2: App boxes -->
+                    <div class="ddd-row ddd-row-app">
+                        <div class="ddd-box ddd-box-app">
+                            <b>Customer.App</b>
+                            <small>Use cases · no Spring</small>
+                        </div>
+                        <div class="ddd-box ddd-box-app">
+                            <b>Product.App</b>
+                            <small>Use cases · no Spring</small>
+                        </div>
+                        <div class="ddd-box ddd-box-app">
+                            <b>Identity.App</b>
+                            <small>Use cases · no Spring</small>
+                        </div>
+                        <div class="ddd-box ddd-box-app ddd-box-order-app">
+                            <b>Order.App</b>
+                            <small>Ports → Customer, Product</small>
+                        </div>
+                    </div>
+
+                    <!-- Kernel band -->
+                    <div class="ddd-kernel">
+                        <span class="ddd-kernel-label">SHARED DOMAIN KERNEL</span>
+                        <span class="ddd-kernel-items">Domain events · Aggregates · Value objects · Ports &amp; adapters</span>
+                    </div>
+
+                    <!-- HTTP port arrows from Order to siblings -->
+                    <div class="ddd-port-row">
+                        <div class="ddd-port-line">
+                            <span class="ddd-port-label">HTTP port</span>
+                            <svg class="ddd-port-svg" viewBox="0 0 120 24" aria-hidden="true">
+                                <path d="M 10 12 L 110 12" stroke="currentColor" stroke-width="1" stroke-dasharray="4 3" fill="none"/>
+                                <polygon points="106,8 114,12 106,16" fill="currentColor"/>
+                            </svg>
+                            <span class="ddd-port-target">Customer.App</span>
+                        </div>
+                        <div class="ddd-port-line">
+                            <span class="ddd-port-label">HTTP port</span>
+                            <svg class="ddd-port-svg" viewBox="0 0 120 24" aria-hidden="true">
+                                <path d="M 10 12 L 110 12" stroke="currentColor" stroke-width="1" stroke-dasharray="4 3" fill="none"/>
+                                <polygon points="106,8 114,12 106,16" fill="currentColor"/>
+                            </svg>
+                            <span class="ddd-port-target">Product.App</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <span class="visual-caption">DOCUMENTATION-BASED ARCHITECTURE MAP <span>Not a captured source diagram</span></span>
+            </div>
+        </div>
         <section class="case-section">
             <div class="case-section-heading"><div><p class="eyebrow">THE PRODUCT</p><h2>Boundaries you<br>can follow.</h2></div><p>The sample separates Customer, Product, Identity, and Order contexts into framework-free application layers and Spring Boot API hosts. A shared DDD kernel contains common primitives, while Order demonstrates cross-context calls through ports and HTTP adapters. It is a working MVP prototype, with in-memory persistence documented as an intentional limitation.</p></div>
             <div class="case-facts">

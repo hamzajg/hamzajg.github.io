@@ -21,11 +21,78 @@
                 <div><p class="case-lede">A gateway that gives clients one OpenAI-compatible API for a pool of local Ollama model nodes, with request routing, health checks, streaming, and operational metrics.</p><div class="case-actions"><a class="button" href="https://github.com/hamzajg/orca-platform" target="_blank" rel="noopener noreferrer">Explore the repository <span>↗</span></a><a class="text-link" href="../index.html">More projects <span>↗</span></a></div></div>
             </div>
         </section>
-        <div class="case-preview-wrap"><div class="case-preview orca-scene">
-            <span class="case-preview-label">PRODUCT PREVIEW · MODEL NODE OPERATIONS</span>
-            <div class="orca-window"><div class="orca-head"><span>ORCA <i>GATEWAY</i></span><span class="orca-live"><i></i> ILLUSTRATIVE STATUS</span></div><div class="orca-stats"><div><small>WORKER POOL</small><b>3 NODES</b></div><div><small>REQUEST ROUTING</small><b>ROUND-ROBIN</b></div></div><div class="worker-row"><i class="worker-dot"></i><span>worker-linux</span><b>ollama</b><small>example</small></div><div class="worker-row"><i class="worker-dot"></i><span>worker-win</span><b>ollama</b><small>example</small></div><div class="worker-row"><i class="worker-dot worker-muted"></i><span>worker-macos</span><b>ollama</b><small>example</small></div><div class="orca-chart"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
-            <span class="visual-caption">DOCUMENTATION-BASED UI CONCEPT <span>Example values · not live gateway data</span></span>
-        </div></div>
+        <div class="case-preview-wrap">
+            <div class="case-preview orca-scene orca-scene-frame">
+                <span class="case-preview-label">PRODUCT PREVIEW · MODEL NODE OPERATIONS</span>
+                <div class="orca-dashboard">
+                    <!-- Header bar -->
+                    <div class="orca-dash-header">
+                        <span class="orca-dash-brand">ORCA <i>GATEWAY</i></span>
+                        <span class="orca-dash-status"><i class="orca-dot-live"></i> ILLUSTRATIVE STATUS</span>
+                        <div class="orca-dash-stats">
+                            <div><small>NODES</small><b>3</b></div>
+                            <div><small>ROUTING</small><b>ROUND-ROBIN</b></div>
+                            <div><small>API</small><b>OpenAI-compat</b></div>
+                        </div>
+                    </div>
+                    <!-- Main columns -->
+                    <div class="orca-dash-body">
+                        <!-- Node list -->
+                        <div class="orca-dash-nodes">
+                            <p class="orca-dash-col-label">WORKER POOL</p>
+                            <div class="orca-node-row orca-node-ready">
+                                <i class="orca-node-dot"></i>
+                                <div class="orca-node-info">
+                                    <b>worker-linux</b>
+                                    <small>ollama · llama3</small>
+                                </div>
+                                <span class="orca-node-state">ready</span>
+                            </div>
+                            <div class="orca-node-row orca-node-ready">
+                                <i class="orca-node-dot"></i>
+                                <div class="orca-node-info">
+                                    <b>worker-win</b>
+                                    <small>ollama · mistral</small>
+                                </div>
+                                <span class="orca-node-state">ready</span>
+                            </div>
+                            <div class="orca-node-row orca-node-check">
+                                <i class="orca-node-dot orca-node-dot-warn"></i>
+                                <div class="orca-node-info">
+                                    <b>worker-macos</b>
+                                    <small>ollama · gemma</small>
+                                </div>
+                                <span class="orca-node-state orca-state-warn">health check</span>
+                            </div>
+                        </div>
+                        <!-- Request log -->
+                        <div class="orca-dash-log">
+                            <p class="orca-dash-col-label">RECENT REQUESTS</p>
+                            <div class="orca-log-row"><span class="orca-log-method">POST</span><code>/v1/chat/completions</code><span class="orca-log-node">worker-linux</span><i class="orca-log-ok">200</i></div>
+                            <div class="orca-log-row"><span class="orca-log-method">POST</span><code>/v1/chat/completions</code><span class="orca-log-node">worker-win</span><i class="orca-log-ok">200</i></div>
+                            <div class="orca-log-row"><span class="orca-log-method">GET</span><code>/v1/models</code><span class="orca-log-node">gateway</span><i class="orca-log-ok">200</i></div>
+                            <div class="orca-log-row"><span class="orca-log-method">GET</span><code>/health</code><span class="orca-log-node">gateway</span><i class="orca-log-ok">200</i></div>
+                        </div>
+                        <!-- Metrics chart -->
+                        <div class="orca-dash-metrics">
+                            <p class="orca-dash-col-label">REQUEST VOLUME</p>
+                            <div class="orca-chart-wrap">
+                                <div class="orca-chart-bars">
+                                    <span style="height:30%"></span><span style="height:55%"></span>
+                                    <span style="height:40%"></span><span style="height:80%"></span>
+                                    <span style="height:60%"></span><span style="height:90%"></span>
+                                    <span style="height:50%"></span><span style="height:70%"></span>
+                                    <span style="height:85%"></span><span style="height:65%"></span>
+                                    <span style="height:75%"></span><span style="height:95%"></span>
+                                </div>
+                            </div>
+                            <div class="orca-chart-labels"><span>12h ago</span><span>now</span></div>
+                        </div>
+                    </div>
+                </div>
+                <span class="visual-caption">DOCUMENTATION-BASED UI CONCEPT <span>Example values · not live gateway data</span></span>
+            </div>
+        </div>
         <section class="case-section">
             <div class="case-section-heading"><div><p class="eyebrow">THE PRODUCT</p><h2>One API.<br>Many local models.</h2></div><p>ORCA sits between OpenAI SDK-compatible clients and Ollama workers across a local network. The documented gateway combines key-based authentication, round-robin routing, health monitoring, streaming proxy support, a model index, and request logging. This dashboard is an illustrative view; its sample node states and chart do not come from a live service.</p></div>
             <div class="case-facts">
