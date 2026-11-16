@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Explore all 45 public repositories by Hamza Jguerim, across web, mobile, desktop, backend, and developer tooling projects.">
+    <meta name="theme-color" content="#101311">
+    <title>All Projects — Hamza Jguerim</title>
+    <link rel="icon" href="../images/fav-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="../stylesheets/portfolio.css" rel="stylesheet">
+</head>
+<body class="catalog-page">
+    <header class="site-header">
+        <a class="wordmark" href="../index.html"><span class="wordmark-mark">h.</span><span>hamza jguerim</span></a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span><span class="sr-only">Toggle navigation</span></button>
+        <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+            <a href="../index.html">Home</a>
+            <a href="#project-directory">All projects</a>
+            <a href="https://github.com/hamzajg" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        </nav>
+    </header>
+    <main class="project-directory section-wrap" id="project-directory">
+        <section class="directory-heading">
+            <p class="eyebrow"><span class="status-dot"></span> A FIELD GUIDE TO MY PUBLIC REPOSITORIES</p>
+            <div class="directory-heading-row">
+                <div><h1>All projects<span class="heading-period">.</span></h1><p>Apps, experiments, services, and the ideas behind them. Each repository gets a page shaped around what it actually is.</p></div>
+                <div class="directory-total"><strong id="directory-total">45</strong><span>PUBLIC<br>REPOSITORIES</span></div>
+            </div>
+            <div class="directory-toolbar">
+                <label class="project-search">
+                    <span aria-hidden="true">⌕</span>
+                    <input id="project-search" type="search" placeholder="Search projects or technologies" autocomplete="off">
+                    <span class="search-shortcut">SEARCH</span>
+                </label>
+                <span class="directory-result-count" id="directory-result-count" aria-live="polite">Loading repository catalog…</span>
+            </div>
+            <div class="directory-filters" role="group" aria-label="Filter by product type">
+                <button class="directory-filter is-active" type="button" data-filter="all" aria-pressed="true">All <span data-count="all">45</span></button>
+                <button class="directory-filter" type="button" data-filter="web" aria-pressed="false">Web <span data-count="web">0</span></button>
+                <button class="directory-filter" type="button" data-filter="mobile" aria-pressed="false">Mobile <span data-count="mobile">0</span></button>
+                <button class="directory-filter" type="button" data-filter="desktop" aria-pressed="false">Desktop <span data-count="desktop">0</span></button>
+                <button class="directory-filter" type="button" data-filter="backend" aria-pressed="false">Backend / API <span data-count="backend">0</span></button>
+                <button class="directory-filter" type="button" data-filter="tool" aria-pressed="false">Developer tools <span data-count="tool">0</span></button>
+                <button class="directory-filter" type="button" data-filter="learning" aria-pressed="false">Learning <span data-count="learning">0</span></button>
+                <button class="directory-filter" type="button" data-filter="other" aria-pressed="false">Other <span data-count="other">0</span></button>
+            </div>
+        </section>
+        <section class="directory-results" aria-label="Projects">
+            <div class="repository-grid" id="repository-grid" aria-live="polite">
+                <div class="directory-loading"><span class="loading-mark">h.</span><p>Loading the project catalog…</p></div>
+            </div>
+            <p class="directory-empty" id="directory-empty" hidden>No repositories match. Try another type or search term.</p>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <a class="wordmark" href="../index.html"><span class="wordmark-mark">h.</span><span>hamza jguerim</span></a>
+        <span>One collection. Many different shapes of software.</span>
+        <a href="https://github.com/hamzajg" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+    </footer>
+    <script src="../javascript/portfolio.js"></script>
+    <script src="../javascript/repository-catalog.js"></script>
+</body>
+</html>
