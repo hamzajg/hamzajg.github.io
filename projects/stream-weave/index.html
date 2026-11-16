@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A case study of StreamWeave, an enterprise AI workflow platform with a visual builder, FastAPI backend, and React interface.">
+    <meta name="theme-color" content="#101311">
+    <title>StreamWeave Platform — Hamza Jguerim</title>
+    <link rel="icon" href="../../images/fav-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="../../stylesheets/portfolio.css" rel="stylesheet">
+</head>
+<body>
+    <header class="project-nav"><a class="wordmark" href="../../index.html"><span class="wordmark-mark">h.</span><span>hamza jguerim</span></a><a class="back-link" href="../index.html"><span>←</span> All projects</a></header>
+    <main class="project-page" data-project="streamweave">
+        <section class="case-hero">
+            <div class="case-hero-inner">
+                <div><p class="case-type">01 / WEB PLATFORM</p><h1>StreamWeave<br>Platform</h1><div class="case-meta"><span>React</span><span>FastAPI</span><span>AI workflows</span><span>Enterprise</span></div></div>
+                <div><p class="case-lede">A platform concept for business teams to compose and operate AI-powered workflows. The product pairs a visual workflow canvas with an API-first backend and enterprise access controls.</p><div class="case-actions"><a class="button" href="https://github.com/hamzajg/stream-weave-platform" target="_blank" rel="noopener noreferrer">Explore the repository <span>↗</span></a><a class="text-link" href="../index.html">More projects <span>↗</span></a></div></div>
+            </div>
+        </section>
+        <div class="case-preview-wrap"><div class="case-preview weave-scene">
+            <span class="case-preview-label">PRODUCT PREVIEW · VISUAL WORKFLOW BUILDER</span>
+            <div class="preview-workspace"><aside class="preview-sidebar"><i></i><i></i><i></i><i></i></aside><div class="preview-canvas"><span class="preview-caption">ONBOARDING / SUPPLIER REVIEW</span><div class="flow-node trigger-node"><b>◎</b><span>New request<small>Trigger</small></span></div><div class="flow-connector"></div><div class="flow-node agent-node"><b>✳</b><span>Research agent<small>Agent · AutoGen</small></span></div><div class="flow-connector"></div><div class="flow-node action-node"><b>↗</b><span>Human review<small>Approval step</small></span></div></div></div>
+            <span class="visual-caption">DOCUMENTATION-BASED UI CONCEPT <span>Not a live application screenshot</span></span>
+        </div></div>
+        <section class="case-section">
+            <div class="case-section-heading"><div><p class="eyebrow">THE PRODUCT</p><h2>Make automation<br>legible.</h2></div><p>StreamWeave is described as an enterprise platform for creating and managing agentic workflows. Its planned experience spans a React web portal, a FastAPI gateway, workflow APIs, and integrations with AutoGen Studio and local Ollama models. The published project is being built iteratively; this case study reflects its documented direction, not a claim that every feature is shipped.</p></div>
+            <div class="case-facts">
+                <article class="case-fact"><span>01 — DESIGN</span><b>Visual composition</b><p>Represent triggers, agents, conditions, and actions as a workflow graph.</p></article>
+                <article class="case-fact"><span>02 — PLATFORM</span><b>Explicit operations</b><p>Keep organizations, workflow versions, and API boundaries visible.</p></article>
+                <article class="case-fact"><span>03 — ACCESS</span><b>Roles & auditability</b><p>Support organization-scoped access, role-based permissions, API keys, and audit logs.</p></article>
+            </div>
+        </section>
+        <section class="case-section">
+            <div class="case-section-heading"><div><p class="eyebrow">WALKTHROUGH</p><h2>From graph<br>to governed flow.</h2></div><p>Explore the documented product idea through three steps. The preview above is an original illustration of the workflow model, not a captured product screen.</p></div>
+            <div class="walkthrough">
+                <div class="walkthrough-steps" role="tablist" aria-label="StreamWeave walkthrough">
+                    <button class="walkthrough-step is-active" id="stream-compose-tab" type="button" role="tab" aria-controls="stream-compose-panel" aria-selected="true" data-step="compose"><span>01</span> Compose</button>
+                    <button class="walkthrough-step" id="stream-publish-tab" type="button" role="tab" aria-controls="stream-publish-panel" aria-selected="false" data-step="publish"><span>02</span> Publish</button>
+                    <button class="walkthrough-step" id="stream-operate-tab" type="button" role="tab" aria-controls="stream-operate-panel" aria-selected="false" data-step="operate"><span>03</span> Operate</button>
+                </div>
+                <div class="walkthrough-content" aria-live="polite">
+                    <article class="walkthrough-panel is-active" id="stream-compose-panel" role="tabpanel" aria-labelledby="stream-compose-tab" data-panel="compose"><h3>Describe the flow as a graph</h3><p>Connect a trigger to agents, conditions, and actions. Workflow snapshots make the shape of the automation explicit and reviewable.</p></article>
+                    <article class="walkthrough-panel" id="stream-publish-panel" role="tabpanel" aria-labelledby="stream-publish-tab" data-panel="publish" hidden><h3>Validate, version, then publish</h3><p>The API describes draft graph updates and publishing as distinct operations, with immutable numbered snapshots to preserve workflow history.</p></article>
+                    <article class="walkthrough-panel" id="stream-operate-panel" role="tabpanel" aria-labelledby="stream-operate-tab" data-panel="operate" hidden><h3>Connect execution to the platform</h3><p>The documented architecture includes a FastAPI gateway, an asynchronous actor system, and integration points for AutoGen Studio and local model runtimes.</p></article>
+                </div>
+            </div>
+        </section>
+        <section class="case-section">
+            <div class="case-section-heading"><div><p class="eyebrow">VIDEO WALKTHROUGH</p><h2>See it in motion.</h2></div><p>A recorded product demo has not been published in the project materials yet. This space is ready for a real capture when one is available.</p></div>
+            <div class="video-panel"><div class="video-placeholder" role="img" aria-label="Video recording not yet published"><div><span class="play-icon">▶</span><strong>Video recording not published</strong><small>There is no public demo video in the project README.</small></div></div><div class="video-copy"><p class="eyebrow">DEMO STATUS</p><h3>Recording to come</h3><p>For now, explore the repository for the latest implementation and roadmap. No video or production screenshot is implied by this concept preview.</p></div></div>
+        </section>
+        <div class="case-next"><span class="case-next-label">NEXT PROJECT</span><a class="case-next-link" href="../agentcraft/index.html">AgentCraft <span>→</span></a></div>
+    </main>
+    <script src="../../javascript/portfolio.js"></script>
+</body>
+</html>

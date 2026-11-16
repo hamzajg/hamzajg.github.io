@@ -1,0 +1,423 @@
+[
+  {
+    "slug": "hamzajg-profile",
+    "repository": "hamzajg",
+    "name": "GitHub Profile",
+    "type": "profile",
+    "summary": "A living overview of my work in software architecture, AI agents, and workflow automation, with links to selected repositories.",
+    "stack": ["Markdown", "GitHub"],
+    "highlights": ["Architecture and system design", "Agentic workflows", "Practical engineering craft"]
+  },
+  {
+    "slug": "openharness",
+    "repository": "openharness",
+    "name": "OpenHarness",
+    "type": "tool",
+    "summary": "An agent workspace and context harness for organizing reusable skills and project context, with a companion interface.",
+    "stack": ["Python", "npm"],
+    "highlights": ["Project context", "Reusable skills", "Companion UI"]
+  },
+  {
+    "slug": "java-microservices-ddd",
+    "repository": "JavaMicroservicesDDD",
+    "name": "JavaMicroservicesDDD",
+    "type": "backend",
+    "summary": "A working Java sample with Customer, Product, Identity, and Order services, exploring bounded contexts and cross-service calls through ports and adapters.",
+    "stack": ["Java 17", "Spring Boot", "Gradle", "Spock", "JUnit 5"],
+    "highlights": ["Four bounded contexts", "Domain events and shared kernel", "Order flow across service boundaries"],
+    "customPage": true
+  },
+  {
+    "slug": "dotnet-core-microservices-ddd",
+    "repository": "DotnetCoreMicroservicesDDD",
+    "name": "DotnetCoreMicroservicesDDD",
+    "type": "backend",
+    "summary": "A .NET reference project exploring domain-driven design and microservice boundaries in ASP.NET Core.",
+    "stack": ["C#", ".NET 10", "ASP.NET Core"]
+  },
+  {
+    "slug": "stream-weave",
+    "repository": "stream-weave-platform",
+    "name": "StreamWeave Platform",
+    "type": "web",
+    "summary": "An enterprise-oriented AI workflow platform with a React interface, FastAPI backend, workflow APIs, and integrations for agent and local-model runtimes.",
+    "stack": ["Python", "FastAPI", "React", "TypeScript", "AutoGen", "Ollama"],
+    "highlights": ["Visual workflow composition", "Versioned workflow definitions", "Organization roles and auditability"],
+    "customPage": true
+  },
+  {
+    "slug": "agentcraft",
+    "repository": "agentcraft",
+    "name": "AgentCraft",
+    "type": "tool",
+    "summary": "A local-first CLI team of AI agents that turns project documentation into reviewed software through small, resumable iterations.",
+    "stack": ["Python", "Ollama", "Aider", "FastAPI", "React"],
+    "highlights": ["Documentation-driven delivery", "Immediate review and approval gates", "Local models, skills, and checkpoints"],
+    "customPage": true
+  },
+  {
+    "slug": "products-quick-test",
+    "repository": "ProductsQuickTest",
+    "name": "ProductsQuickTest",
+    "type": "web",
+    "summary": "A product, customer, and order platform with service APIs, a gateway, and a back-office interface.",
+    "stack": ["Java 17", "Quarkus", "Spring Boot", "React 17", "Gradle"],
+    "highlights": ["Product and order workflows", "Gateway and service APIs", "Back-office interface"]
+  },
+  {
+    "slug": "car-filters",
+    "repository": "CarFilters",
+    "name": "CarFilters",
+    "type": "mobile",
+    "summary": "An Android camera app for taking photos and applying image filters, backed by a local Room database.",
+    "stack": ["Java", "Android", "Room"],
+    "highlights": ["Camera-based photo flow", "Image filters", "Local data storage"]
+  },
+  {
+    "slug": "get-jobs-app",
+    "repository": "GetJobsApp",
+    "name": "GetJobsApp",
+    "type": "mobile",
+    "summary": "An Android job-listing app built with Java and AndroidX.",
+    "stack": ["Java", "AndroidX"],
+    "highlights": ["Job discovery", "Android-native interface", "Java app structure"]
+  },
+  {
+    "slug": "odeev-kata",
+    "repository": "odeev-kata",
+    "name": "Odeev",
+    "type": "concept",
+    "summary": "A proposal and proof of concept for a software-development platform spanning a web experience, IDE extension, and CLI.",
+    "stack": ["JavaScript", "Platform concept"],
+    "highlights": ["Multiple developer surfaces", "Product proposal and PoC", "Implementation details vary by component"]
+  },
+  {
+    "slug": "dynamic-soft",
+    "repository": "dynamic-soft",
+    "name": "Dynamic Soft",
+    "type": "concept",
+    "summary": "A concept for an integrated development platform combining a marketplace and software-development tools.",
+    "stack": ["JavaScript", "Platform concept"],
+    "highlights": ["Integrated developer environment", "Marketplace concept", "Early-stage product material"]
+  },
+  {
+    "slug": "mood-media-kata",
+    "repository": "mood-media-kata",
+    "name": "Mood Media Kata",
+    "type": "backend",
+    "summary": "A .NET message-processing kata with API and console components and configurable data and messaging pieces.",
+    "stack": ["C#", ".NET", "REST", "htmx"],
+    "highlights": ["Message-processing workflow", "API and console surfaces", "Configurable storage and messaging"]
+  },
+  {
+    "slug": "creativity-store",
+    "repository": "CreativityStore",
+    "name": "CreativityStore",
+    "type": "web",
+    "summary": "A multi-module creativity marketplace with a Quarkus API, domain and persistence layers, storefronts, and an admin dashboard.",
+    "stack": ["Java 17", "Quarkus", "Gradle", "JWT", "Web apps"],
+    "highlights": ["Customer storefront and demo storefront", "Product API and domain model", "Separate dashboard and persistence modules"]
+  },
+  {
+    "slug": "referral-me",
+    "repository": "ReferralMe",
+    "name": "ReferralMe",
+    "type": "backend",
+    "summary": "A referral-marketplace prototype where candidates post requests and professionals apply, ask questions, and answer through a Quarkus API.",
+    "stack": ["Java 17", "Quarkus", "Gradle", "Spock", "RestAssured"],
+    "highlights": ["Referral request lifecycle", "Candidate and expert domain model", "In-memory MVP API"]
+  },
+  {
+    "slug": "orca-platform",
+    "repository": "orca-platform",
+    "name": "ORCA Platform",
+    "type": "backend",
+    "summary": "A multi-node Ollama gateway with an OpenAI-compatible API, round-robin routing, health monitoring, streaming, and operational metrics.",
+    "stack": ["Python", "FastAPI", "Ollama", "SQLite", "SSE"],
+    "highlights": ["Single API across local model nodes", "Health checks and round-robin routing", "Request logs and metrics"],
+    "customPage": true
+  },
+  {
+    "slug": "ai-agent-bot-mfe",
+    "repository": "ai-agent-bot-mfe",
+    "name": "AI Agent Bot MFE",
+    "type": "web",
+    "summary": "A modular AI chatbot application with an embeddable widget, admin dashboard, landing page, authentication, and multiple model-provider integrations.",
+    "stack": ["TypeScript", "Vite", "Micro-frontends", "OpenAI", "Gemini", "Ollama"],
+    "highlights": ["Embeddable chat widget", "Admin dashboard and authentication", "OpenAI, Gemini, and Ollama integrations"],
+    "demoUrl": "https://ai-agent-chatbot-58638.web.app/",
+    "media": [
+      {"src": "https://raw.githubusercontent.com/hamzajg/ai-agent-bot-mfe/main/docs/image-1.png", "alt": "AI Agent Bot project preview", "label": "Project preview"},
+      {"src": "https://raw.githubusercontent.com/hamzajg/ai-agent-bot-mfe/main/docs/image-2.png", "alt": "AI Agent Bot demo preview", "label": "Demo preview"}
+    ]
+  },
+  {
+    "slug": "intentfoundry",
+    "repository": "intentfoundry",
+    "name": "IntentFoundry",
+    "type": "backend",
+    "summary": "A human–AI collaboration framework exposed as a specification and architecture API.",
+    "stack": ["Python 3.11", "FastAPI", "SQLite", "PostgreSQL"],
+    "highlights": ["Human–AI collaboration model", "Specification and architecture API", "Relational storage options"]
+  },
+  {
+    "slug": "online-anime-music",
+    "repository": "OnlineAnimeMusic",
+    "name": "Online Anime Music",
+    "type": "mobile",
+    "summary": "An Android app for listening to anime music, built with Java.",
+    "stack": ["Java", "Android"],
+    "highlights": ["Anime music listening", "Android-native app", "Java implementation"]
+  },
+  {
+    "slug": "ddd-eshop",
+    "repository": "ddd-eshop",
+    "name": "DDD E-Shop",
+    "type": "learning",
+    "summary": "A domain-driven design practice project modeling an e-shop and exposing its flow through an interactive CLI.",
+    "stack": ["Java", "Gradle", "DDD"],
+    "highlights": ["E-shop domain model", "Interactive command-line flow", "Domain-driven design practice"]
+  },
+  {
+    "slug": "tdd-android",
+    "repository": "TDD-Android",
+    "name": "TDD Android",
+    "type": "learning",
+    "summary": "An Android test-driven-development course workspace whose main exercise is a JVM String Calculator kata.",
+    "stack": ["Java", "Android", "Gradle", "JUnit"],
+    "highlights": ["String Calculator kata", "Test-first development", "Android course workspace"]
+  },
+  {
+    "slug": "movies-rec-colab",
+    "repository": "movies-rec-colab",
+    "name": "Movies Recommendation Colab",
+    "type": "learning",
+    "summary": "A Jupyter and Colab notebook for training and evaluating a movie-recommendation model.",
+    "stack": ["Python", "Jupyter", "Surprise"],
+    "highlights": ["Movie recommendation experiments", "Model training and evaluation", "Notebook-based workflow"]
+  },
+  {
+    "slug": "py-perfume-store",
+    "repository": "PyPerfumeStore",
+    "name": "PyPerfumeStore",
+    "type": "web",
+    "summary": "A perfume storefront and management back office built around a Django REST API and AngularJS interface.",
+    "stack": ["Python", "Django", "Django REST Framework", "AngularJS"],
+    "highlights": ["Customer storefront", "Management back office", "REST-backed interface"]
+  },
+  {
+    "slug": "py-gest-comm",
+    "repository": "PyGestComm",
+    "name": "PyGestComm",
+    "type": "backend",
+    "summary": "A REST API for small-business management, built with Django and Django REST Framework.",
+    "stack": ["Python", "Django", "Django REST Framework"],
+    "highlights": ["Small-business management domain", "REST API", "Python backend"]
+  },
+  {
+    "slug": "movies-surprise-flask",
+    "repository": "movies-surprise-flask",
+    "name": "Movies Surprise Flask",
+    "type": "backend",
+    "summary": "A Flask movie-recommendation scoring service that returns top-N recommendations from trained Surprise models, with a small request form.",
+    "stack": ["Python", "Flask", "Surprise", "Docker"],
+    "highlights": ["POST /score recommendation API", "Pre-trained SVD and KNN models", "HTML form and JSON response"],
+    "media": [
+      {"src": "https://raw.githubusercontent.com/hamzajg/movies-surprise-flask/master/01.png", "alt": "Movie recommender request form", "label": "Request form"},
+      {"src": "https://raw.githubusercontent.com/hamzajg/movies-surprise-flask/master/02.png", "alt": "Movie recommendations result", "label": "Recommendations"},
+      {"src": "https://raw.githubusercontent.com/hamzajg/movies-surprise-flask/master/03.png", "alt": "Movie recommender API response", "label": "API response"}
+    ]
+  },
+  {
+    "slug": "al-minhej",
+    "repository": "al-minhej",
+    "name": "Al-Minhej",
+    "type": "web",
+    "summary": "An Arabic-first guided-reading web client. The README describes a frontend experience without a backend yet.",
+    "stack": ["React 19", "TypeScript", "Vite", "Tailwind CSS"],
+    "highlights": ["Arabic-first reading experience", "Guided content client", "Frontend-only project status"]
+  },
+  {
+    "slug": "fluxion",
+    "repository": "fluxion",
+    "name": "Fluxion",
+    "type": "library",
+    "summary": "An embeddable TypeScript core for intent-driven content-feed ranking, interaction, and signal processing.",
+    "stack": ["TypeScript"],
+    "highlights": ["Intent-driven ranking core", "Feed interactions and signals", "Designed to be embedded"]
+  },
+  {
+    "slug": "my-prayer-wear",
+    "repository": "MyPrayerWear",
+    "name": "MyPrayerWear",
+    "type": "wearable",
+    "summary": "A Tizen wearable watch face showing the time, Hijri date, next prayer, and a countdown, using location-aware prayer-time data.",
+    "stack": ["JavaScript", "Tizen Web App", "TAU", "AlAdhan API"],
+    "highlights": ["Round-watch face and countdown ring", "Hijri date and next prayer", "GPS-based prayer-time lookup"]
+  },
+  {
+    "slug": "gest-comm-clientfx",
+    "repository": "Gest_Comm_ClientFX",
+    "name": "Gest Comm ClientFX",
+    "type": "desktop",
+    "summary": "An incomplete JavaFX desktop client for a business-management application.",
+    "stack": ["Java", "JavaFX", "Maven"],
+    "highlights": ["Desktop client structure", "JavaFX interface", "Repository marks the client incomplete"]
+  },
+  {
+    "slug": "netlify-custom-oauth",
+    "repository": "netlify-custom-oauth",
+    "name": "Netlify Custom OAuth",
+    "type": "web",
+    "summary": "A web authentication demo combining Netlify Identity with a custom Google OAuth flow.",
+    "stack": ["JavaScript", "SvelteKit", "Netlify Functions", "Google OAuth"],
+    "highlights": ["Custom Google OAuth flow", "Netlify Identity integration", "Serverless functions"]
+  },
+  {
+    "slug": "unclebob-cleancode",
+    "repository": "UncleBob_CleanCode",
+    "name": "Uncle Bob Clean Code",
+    "type": "learning",
+    "summary": "A small Java checkout example used to practice Clean Code principles.",
+    "stack": ["Java", "Maven", "JUnit 5"],
+    "highlights": ["Checkout example", "Clean Code practice", "JUnit test suite"]
+  },
+  {
+    "slug": "tdd-lets-play",
+    "repository": "TDDLetsPlay",
+    "name": "TDD Let’s Play",
+    "type": "learning",
+    "summary": "A set of Java test-driven-development katas covering savings accounts, bowling, and tic-tac-toe.",
+    "stack": ["Java", "Gradle", "TDD"],
+    "highlights": ["Savings-account kata", "Bowling kata", "Tic-tac-toe kata"]
+  },
+  {
+    "slug": "tdd-ios",
+    "repository": "TDD-iOS",
+    "name": "TDD iOS",
+    "type": "learning",
+    "summary": "An iOS test-driven-development course workspace with exercises organized as Swift packages.",
+    "stack": ["Swift", "Swift Package Manager", "Xcode"],
+    "highlights": ["Testable Swift packages", "iOS development exercises", "Course workspace"]
+  },
+  {
+    "slug": "solid-csharp",
+    "repository": "S.O.L.I.D_CSharp",
+    "name": "SOLID C#",
+    "type": "learning",
+    "summary": "C# examples for SOLID design principles, including refactored and principle-violating versions.",
+    "stack": ["C#", ".NET 8"],
+    "highlights": ["SOLID principle examples", "Compare design alternatives", "C# practice code"]
+  },
+  {
+    "slug": "reactive-java-12",
+    "repository": "ReactiveJAVA12",
+    "name": "Reactive Java 12",
+    "type": "learning",
+    "summary": "Java examples exploring reactive programming with the JDK Flow API.",
+    "stack": ["Java", "JDK Flow API", "Gradle"],
+    "highlights": ["Flow publishers and subscribers", "Reactive programming examples", "Runnable Java modules"]
+  },
+  {
+    "slug": "oo-design-patterns",
+    "repository": "OO-DesignPatterns",
+    "name": "OO Design Patterns",
+    "type": "learning",
+    "summary": "Tested object-oriented examples of Strategy, Observer, Decorator, and Factory patterns in Java and C#.",
+    "stack": ["Java", "C#", ".NET 8", "Gradle"],
+    "highlights": ["Strategy and Observer", "Decorator and Factory", "Examples across two languages"]
+  },
+  {
+    "slug": "java-httpclient",
+    "repository": "Java-HttpClient",
+    "name": "Java HttpClient",
+    "type": "tool",
+    "summary": "A synchronous command-line URL link checker using the JDK HttpClient.",
+    "stack": ["Java", "JDK HttpClient", "Gradle"],
+    "highlights": ["Synchronous HTTP requests", "URL checking workflow", "Small Java CLI"]
+  },
+  {
+    "slug": "functional-python",
+    "repository": "FunctionalPython",
+    "name": "Functional Python",
+    "type": "learning",
+    "summary": "Examples and tests exploring functional-programming techniques using the Python standard library.",
+    "stack": ["Python", "Standard Library"],
+    "highlights": ["Functional programming examples", "Standard-library implementations", "Tested exercises"]
+  },
+  {
+    "slug": "csharp-more-functions",
+    "repository": "CSharpMoreFn",
+    "name": "C# More Functional",
+    "type": "learning",
+    "summary": "C# examples exploring functional-programming constructs and approaches.",
+    "stack": ["C#", ".NET 8"],
+    "highlights": ["Functional programming constructs", "Small focused examples", "C# practice"]
+  },
+  {
+    "slug": "portfolio-site",
+    "repository": "hamzajg.github.io",
+    "name": "Portfolio Website",
+    "type": "site",
+    "summary": "The static portfolio site: responsive project catalog and dedicated case studies for software products and learning projects.",
+    "stack": ["HTML", "CSS", "JavaScript", "GitHub Pages"],
+    "highlights": ["Static multi-page site", "Project-specific presentations", "Relative links and no build step"]
+  },
+  {
+    "slug": "machrou3kom",
+    "repository": "Machrou3kom",
+    "name": "Machrou3kom",
+    "type": "mobile",
+    "summary": "An iOS app for discovering and sharing local projects, using Firebase and Auth0.",
+    "stack": ["Swift", "iOS", "UIKit", "Firebase", "Auth0"],
+    "highlights": ["Discover local projects", "Share project ideas", "Firebase and Auth0 services"]
+  },
+  {
+    "slug": "icek-watch",
+    "repository": "IceK-Watch",
+    "name": "IceK Watch",
+    "type": "mobile",
+    "summary": "An iOS app for browsing anime and movies, built with UIKit.",
+    "stack": ["Swift", "iOS", "UIKit", "CocoaPods"],
+    "highlights": ["Browse anime and movies", "iOS-native interface", "CocoaPods dependencies"]
+  },
+  {
+    "slug": "the-productive-family",
+    "repository": "TheProductiveFamily",
+    "name": "The Productive Family",
+    "type": "mobile",
+    "summary": "A family-life organization app built with Xamarin.Forms for Android and iOS.",
+    "stack": ["C#", "Xamarin.Forms", "Android", "iOS"],
+    "highlights": ["Family organization workflow", "Cross-platform mobile app", "Shared Xamarin.Forms interface"]
+  },
+  {
+    "slug": "ddd-crash-course",
+    "repository": "DDD-CrashCourse",
+    "name": "DDD Crash Course",
+    "type": "learning",
+    "summary": "A Markdown article series on strategic domain-driven design, subdomains, and classifying a worked EMR example.",
+    "stack": ["Markdown", "Domain-Driven Design"],
+    "highlights": ["Strategic DDD concepts", "Core, supporting, and generic subdomains", "Worked EMR example"],
+    "media": [
+      {"src": "https://raw.githubusercontent.com/hamzajg/DDD-CrashCourse/master/ch-1-subdomains.png", "alt": "Subdomains in the example EMR domain", "label": "Domain diagram", "kind": "diagram"}
+    ]
+  },
+  {
+    "slug": "gest-comm",
+    "repository": "Gest_Comm",
+    "name": "Gest Comm",
+    "type": "backend",
+    "summary": "An incomplete Java business-management backend skeleton with Oracle ADF/BC4J and servlet wiring.",
+    "stack": ["Java", "Oracle ADF", "BC4J", "JDeveloper"],
+    "highlights": ["Business-management domain", "ADF and servlet integration", "Repository marks the backend incomplete"]
+  },
+  {
+    "slug": "fst-graalvm-demo",
+    "repository": "fst-graalvm-demo",
+    "name": "FST GraalVM Demo",
+    "type": "learning",
+    "summary": "A Java demonstration of object serialization and round-tripping with FST and GraalVM.",
+    "stack": ["Java", "Maven", "FST", "GraalVM"],
+    "highlights": ["Serialization round trip", "FST library example", "GraalVM compatibility demonstration"]
+  }
+]

@@ -4,12 +4,10 @@ Guidance for AI agents (and humans) working in this repository.
 
 ## Project
 
-Source of <https://hamzajg.github.io> — a single-page **CV/resume site**
-built on Bootstrap 3, Materialize, Font Awesome, and small jQuery plugins
-(scroll reveal, touch swipe, retina, map with labels).
+Source of <https://hamzajg.github.io> — a static portfolio with a searchable
+directory and a dedicated case-study page for each of 45 public repositories.
 **Static site: no build step or generator.** GitHub Pages serves
-`index.html` from `master`; SASS sources live in `sass/` but the site
-loads precompiled CSS from `stylesheets/`.
+`index.html` from `master`.
 
 ## Commands
 
@@ -27,10 +25,14 @@ If you edit `sass/`, compile it and commit the output to
 
 ```
 hamzajg.github.io/
-  index.html          the whole site (single page)
-  stylesheets/        precompiled CSS (bootstrap.min.css etc.)
-  sass/               SASS sources (not loaded directly)
-  javascript/         jQuery + plugins + site scripts (bootstrap.min.js etc.)
+  index.html          selected-work portfolio landing page
+  projects/
+    index.html        searchable directory
+    catalog.json      project metadata and media
+    <slug>/index.html project case studies
+  stylesheets/        portfolio.css plus unused legacy themes
+  sass/               legacy SASS sources (not loaded)
+  javascript/         portfolio.js plus unused legacy plugins (bootstrap.min.js etc.)
   fonts/              icon/web fonts (Font Awesome etc.)
   images/             photos/assets
   colors/             (color scheme assets?)
@@ -39,13 +41,15 @@ hamzajg.github.io/
 
 ## Conventions
 
-- **Static, no build** — edit `index.html` + `stylesheets/` +
-  `javascript/` directly; keep `sass/` in sync if you change styles.
-- jQuery-era plugins — don't introduce a framework/bundler; match the
-  existing script style.
+- **Static, no build** — edit the landing page, catalog, and project pages directly.
+  Portfolio styles belong in `stylesheets/portfolio.css`; it has no SASS
+  source. Legacy `sass/` files do not affect the current site.
+- Keep interactions lightweight and dependency-free; the current portfolio
+  uses vanilla JavaScript in `javascript/`.
 - All asset paths are relative — keep them that way (GitHub Pages +
   local `http.server` both rely on it).
-- KISS: it's a CV page — content changes, not architecture.
+- Keep project claims aligned with their repository documentation and label
+  illustrative previews clearly.
 
 ## Landmines
 
@@ -53,10 +57,8 @@ hamzajg.github.io/
   `master`.** Merging to any other branch does NOT deploy.
 - **No build step** — `stylesheets/` is precompiled; editing `sass/`
   alone does nothing until compiled.
-- jQuery + Bootstrap 3 + Materialize mix — old stack; don't modernise
-  without need.
-- `index.html` is large (~1000+ lines) — edit carefully, it's the whole
-  site.
+- Legacy CV assets remain in the repository but are no longer loaded by the
+  portfolio.
 - GitHub Pages serves whatever is committed — no preview deploys.
 
 ## Agent rules

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="AgentCraft is a local-first, documentation-driven team of AI agents for software delivery.">
+    <meta name="theme-color" content="#101311">
+    <title>AgentCraft — Hamza Jguerim</title>
+    <link rel="icon" href="../../images/fav-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="../../stylesheets/portfolio.css" rel="stylesheet">
+</head>
+<body>
+    <header class="project-nav"><a class="wordmark" href="../../index.html"><span class="wordmark-mark">h.</span><span>hamza jguerim</span></a><a class="back-link" href="../index.html"><span>←</span> All projects</a></header>
+    <main class="project-page" data-project="agentcraft">
+        <section class="case-hero">
+            <div class="case-hero-inner">
+                <div><p class="case-type">02 / LOCAL-FIRST DEVELOPER TOOL</p><h1>AgentCraft</h1><div class="case-meta"><span>Python</span><span>Ollama + Aider</span><span>Local-first</span><span>Human approval</span></div></div>
+                <div><p class="case-lede">A documentation-driven team of AI agents for software delivery. Give it a project brief, let specialized agents plan and build in small iterations, then review the work before it moves on.</p><div class="case-actions"><a class="button" href="https://github.com/hamzajg/agentcraft" target="_blank" rel="noopener noreferrer">Explore the repository <span>↗</span></a><a class="text-link" href="../index.html">More projects <span>↗</span></a></div></div>
+            </div>
+        </section>
+        <div class="case-preview-wrap"><div class="case-preview agent-scene">
+            <span class="case-preview-label">PRODUCT PREVIEW · LOCAL AGENT WORKFLOW</span>
+            <div class="terminal-window"><div class="terminal-bar"><i></i><i></i><i></i><span>agentcraft / workspace</span></div><div class="terminal-content"><p><span class="terminal-prompt">›</span> python agentcraft bootstrap</p><div class="terminal-rule"></div><p class="terminal-muted">iteration 03 <span>·</span> working from docs/blueprint.md</p><p><span class="terminal-ok">✓</span> Spec agent <span class="terminal-state">complete</span></p><p><span class="terminal-ok">✓</span> Architect <span class="terminal-state">complete</span></p><p><span class="terminal-live">●</span> Backend dev <span class="terminal-state">working</span></p><div class="terminal-progress"><i></i></div><p class="terminal-small">Immediate review follows each task · user approval gate</p></div></div>
+            <span class="visual-caption">DOCUMENTATION-BASED UI CONCEPT <span>Illustrative terminal, not a live capture</span></span>
+        </div></div>
+        <section class="case-section">
+            <div class="case-section-heading"><div><p class="eyebrow">THE PRODUCT</p><h2>Local agents.<br>Human direction.</h2></div><p>AgentCraft runs a configurable team of specialized agents against a project workspace. Its documented loop moves from specifications and architecture to planned iterations, implementation, review, and user approval. The repository emphasizes local Ollama models, resumable checkpoints, and reusable skills and frameworks.</p></div>
+            <div class="case-facts">
+                <article class="case-fact"><span>01 — PRIVATE BY DEFAULT</span><b>Local model workflow</b><p>Ollama and Aider power a setup that does not require cloud API keys.</p></article>
+                <article class="case-fact"><span>02 — SHORT FEEDBACK LOOPS</span><b>Review each task</b><p>Agents implement, get immediate review, and rework before the iteration moves on.</p></article>
+                <article class="case-fact"><span>03 — EXTENSIBLE TEAM</span><b>Skills & frameworks</b><p>Configure agent personas and reusable skills, or add a new self-contained agent.</p></article>
+            </div>
+        </section>
+        <section class="case-section">
+            <div class="case-section-heading"><div><p class="eyebrow">WALKTHROUGH</p><h2>Make the work<br>inspectable.</h2></div><p>The flow starts with human-authored context and stays resumable and reviewable throughout. Pick a step to see the documented workflow.</p></div>
+            <div class="walkthrough">
+                <div class="walkthrough-steps" role="tablist" aria-label="AgentCraft walkthrough">
+                    <button class="walkthrough-step is-active" id="agent-specify-tab" type="button" role="tab" aria-controls="agent-specify-panel" aria-selected="true" data-step="specify"><span>01</span> Specify</button>
+                    <button class="walkthrough-step" id="agent-build-tab" type="button" role="tab" aria-controls="agent-build-panel" aria-selected="false" data-step="build"><span>02</span> Build</button>
+                    <button class="walkthrough-step" id="agent-review-tab" type="button" role="tab" aria-controls="agent-review-panel" aria-selected="false" data-step="review"><span>03</span> Review</button>
+                </div>
+                <div class="walkthrough-content" aria-live="polite">
+                    <article class="walkthrough-panel is-active" id="agent-specify-panel" role="tabpanel" aria-labelledby="agent-specify-tab" data-panel="specify"><h3>Start with project context</h3><p>Write requirements and architecture docs, then configure the workspace, model, output path, and optional methodology in workspace.yaml.</p></article>
+                    <article class="walkthrough-panel" id="agent-build-panel" role="tabpanel" aria-labelledby="agent-build-tab" data-panel="build" hidden><h3>Let the team work in iterations</h3><p>Spec, architect, planner, and developer agents collaborate through small tasks. AgentCraft resumes from checkpoints and can run selected phases or parallel tasks.</p></article>
+                    <article class="walkthrough-panel" id="agent-review-panel" role="tabpanel" aria-labelledby="agent-review-tab" data-panel="review" hidden><h3>Inspect before approving</h3><p>Immediate task review and user approval gates keep generated changes in a human-directed workflow. A local communications UI offers chat, monitoring, and RAG inspection.</p></article>
+                </div>
+            </div>
+        </section>
+        <section class="case-section">
+            <div class="case-section-heading"><div><p class="eyebrow">VIDEO WALKTHROUGH</p><h2>See the team<br>in action.</h2></div><p>A recorded demo is not currently published in the repository. This section is reserved for a real CLI and communications-UI walkthrough.</p></div>
+            <div class="video-panel"><div class="video-placeholder" role="img" aria-label="Video recording not yet published"><div><span class="play-icon">▶</span><strong>Video recording not published</strong><small>No public demo video is linked from the project README.</small></div></div><div class="video-copy"><p class="eyebrow">DEMO STATUS</p><h3>Recording to come</h3><p>Visit GitHub for setup instructions, the CLI command reference, workflow details, and the current source.</p></div></div>
+        </section>
+        <div class="case-next"><span class="case-next-label">NEXT PROJECT</span><a class="case-next-link" href="../orca-platform/index.html">ORCA Platform <span>→</span></a></div>
+    </main>
+    <script src="../../javascript/portfolio.js"></script>
+</body>
+</html>

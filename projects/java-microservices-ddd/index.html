@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A Java and Spring Boot project exploring domain-driven design, bounded contexts, domain events, and cross-service collaboration.">
+    <meta name="theme-color" content="#101311">
+    <title>JavaMicroservicesDDD — Hamza Jguerim</title>
+    <link rel="icon" href="../../images/fav-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="../../stylesheets/portfolio.css" rel="stylesheet">
+</head>
+<body>
+    <header class="project-nav"><a class="wordmark" href="../../index.html"><span class="wordmark-mark">h.</span><span>hamza jguerim</span></a><a class="back-link" href="../index.html"><span>←</span> All projects</a></header>
+    <main class="project-page" data-project="ddd">
+        <section class="case-hero">
+            <div class="case-hero-inner">
+                <div><p class="case-type">04 / ARCHITECTURE STUDY</p><h1>Java<br>Microservices<br>DDD</h1><div class="case-meta"><span>Java 17</span><span>Spring Boot</span><span>Domain-driven design</span><span>Gradle</span></div></div>
+                <div><p class="case-lede">A working multi-module sample exploring bounded contexts, domain and application layers, domain events, and service collaboration through ports and adapters.</p><div class="case-actions"><a class="button" href="https://github.com/hamzajg/JavaMicroservicesDDD" target="_blank" rel="noopener noreferrer">Explore the repository <span>↗</span></a><a class="text-link" href="../index.html">More projects <span>↗</span></a></div></div>
+            </div>
+        </section>
+        <div class="case-preview-wrap"><div class="case-preview ddd-scene">
+            <span class="case-preview-label">ARCHITECTURE PREVIEW · FOUR BOUNDED CONTEXTS</span>
+            <div class="architecture-preview"><div class="architecture-label">API / SERVICE BOUNDARIES</div><div class="context-row"><span>Customer.Api</span><span>Product.Api</span><span>Identity.Api</span></div><div class="architecture-arrows"><i>↕</i><i>↕</i><i>↕</i></div><div class="context-row context-app"><span>Customer.App</span><span>Product.App</span><span>Identity.App</span></div><div class="domain-kernel">SHARED DOMAIN KERNEL <span>·</span> DOMAIN EVENTS <span>·</span> PORTS & ADAPTERS</div><div class="order-bridge"><span>Order.Api / Order.App</span><i>← HTTP ports →</i><span>Customer + Product</span></div></div>
+            <span class="visual-caption">DOCUMENTATION-BASED ARCHITECTURE MAP <span>Not a captured source diagram</span></span>
+        </div></div>
+        <section class="case-section">
+            <div class="case-section-heading"><div><p class="eyebrow">THE PRODUCT</p><h2>Boundaries you<br>can follow.</h2></div><p>The sample separates Customer, Product, Identity, and Order contexts into framework-free application layers and Spring Boot API hosts. A shared DDD kernel contains common primitives, while Order demonstrates cross-context calls through ports and HTTP adapters. It is a working MVP prototype, with in-memory persistence documented as an intentional limitation.</p></div>
+            <div class="case-facts">
+                <article class="case-fact"><span>01 — DOMAIN MODEL</span><b>Own the business rules</b><p>Keep entities, aggregates, and use cases separate from Spring-host concerns.</p></article>
+                <article class="case-fact"><span>02 — INTEGRATION</span><b>Collaborate through ports</b><p>Order validates and prices a request by calling Customer and Product services.</p></article>
+                <article class="case-fact"><span>03 — RESILIENCE</span><b>Bound upstream calls</b><p>Documented timeouts distinguish unavailable services from invalid requests.</p></article>
+            </div>
+        </section>
+        <section class="case-section">
+            <div class="case-section-heading"><div><p class="eyebrow">WALKTHROUGH</p><h2>Follow an order<br>across contexts.</h2></div><p>The order flow is a concrete way to see the architecture at work: identity, ownership, application logic, and service-to-service boundaries each have a role.</p></div>
+            <div class="walkthrough">
+                <div class="walkthrough-steps" role="tablist" aria-label="JavaMicroservicesDDD walkthrough">
+                    <button class="walkthrough-step is-active" id="ddd-identity-tab" type="button" role="tab" aria-controls="ddd-identity-panel" aria-selected="true" data-step="identity"><span>01</span> Identify</button>
+                    <button class="walkthrough-step" id="ddd-place-tab" type="button" role="tab" aria-controls="ddd-place-panel" aria-selected="false" data-step="place"><span>02</span> Place order</button>
+                    <button class="walkthrough-step" id="ddd-protect-tab" type="button" role="tab" aria-controls="ddd-protect-panel" aria-selected="false" data-step="protect"><span>03</span> Protect</button>
+                </div>
+                <div class="walkthrough-content" aria-live="polite">
+                    <article class="walkthrough-panel is-active" id="ddd-identity-panel" role="tabpanel" aria-labelledby="ddd-identity-tab" data-panel="identity"><h3>Resolve the caller’s identity</h3><p>Identity issues a token, and the Order API resolves the caller through the Identity service before acting on an order request.</p></article>
+                    <article class="walkthrough-panel" id="ddd-place-panel" role="tabpanel" aria-labelledby="ddd-place-tab" data-panel="place" hidden><h3>Compose behavior across services</h3><p>Order uses ports to validate the customer and products, calculates the total server-side, and returns an order with catalog details.</p></article>
+                    <article class="walkthrough-panel" id="ddd-protect-panel" role="tabpanel" aria-labelledby="ddd-protect-tab" data-panel="protect" hidden><h3>Keep ownership and failures explicit</h3><p>Order reads are scoped to the caller. Upstream timeouts and failures are mapped to bounded HTTP responses rather than hanging indefinitely.</p></article>
+                </div>
+            </div>
+        </section>
+        <section class="case-section">
+            <div class="case-section-heading"><div><p class="eyebrow">VIDEO WALKTHROUGH</p><h2>Trace the<br>architecture.</h2></div><p>The repository does not currently link a recorded demo or a set of product screenshots. The architecture map above is an original illustration of the documented module boundaries.</p></div>
+            <div class="video-panel"><div class="video-placeholder" role="img" aria-label="Video recording not yet published"><div><span class="play-icon">▶</span><strong>Video recording not published</strong><small>No public demo video is linked from the project README.</small></div></div><div class="video-copy"><p class="eyebrow">DEMO STATUS</p><h3>Recording to come</h3><p>Read the repository for module responsibilities, API contracts, build instructions, and the current working MVP.</p></div></div>
+        </section>
+        <div class="case-next"><span class="case-next-label">BACK TO THE COLLECTION</span><a class="case-next-link" href="../index.html">All repositories <span>→</span></a></div>
+    </main>
+    <script src="../../javascript/portfolio.js"></script>
+</body>
+</html>
