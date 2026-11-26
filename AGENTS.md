@@ -11,7 +11,8 @@ directory and a dedicated case-study page for each of 45 public repositories.
 
 ## Commands
 
-No build, no tests, no CI.
+No build step or generator. CI checks JavaScript syntax and that internal
+links and asset paths resolve (`/.github/workflows/ci.yml`).
 
 | Task | Command |
 |---|---|

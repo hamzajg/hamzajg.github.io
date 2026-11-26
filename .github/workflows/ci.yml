@@ -1,0 +1,37 @@
+name: CI
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    name: Static checks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Check JavaScript syntax
+        run: for f in javascript/*.js; do node --check "$f"; done
+
+      # GitHub Pages serves the files as-is, so a typo in an asset path is a
+      # broken page in production. Offline mode checks the paths that exist in
+      # the repo and ignores the rest.
+      - name: Check internal links and assets
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --offline --include-fragments --no-progress '*.html' 'projects/**/*.html'
+          fail: true
